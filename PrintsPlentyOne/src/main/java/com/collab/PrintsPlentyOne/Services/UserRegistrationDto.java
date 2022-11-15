@@ -1,10 +1,8 @@
 package com.collab.PrintsPlentyOne.Services;
-
+import com.collab.PrintsPlentyOne.FieldMatch;
 import javax.validation.constraints.AssertTrue;
-import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 
-// import com.collab.PrintsPlentyOne FieldMatch
 
 @FieldMatch.List({
         @FieldMatch(first = "password", second = "confirmPassword", message = "The password fields must match"),

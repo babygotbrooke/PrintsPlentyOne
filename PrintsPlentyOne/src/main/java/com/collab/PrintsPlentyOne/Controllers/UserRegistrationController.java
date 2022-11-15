@@ -3,6 +3,7 @@ package com.collab.PrintsPlentyOne.Controllers;
 import javax.validation.Valid;
 
 import com.collab.PrintsPlentyOne.Models.User;
+import com.collab.PrintsPlentyOne.Services.UserService;
 import com.collab.PrintsPlentyOne.Services.UserRegistrationDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

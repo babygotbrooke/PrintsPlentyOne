@@ -3,7 +3,7 @@ package com.collab.PrintsPlentyOne;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import org.apache.commons.beanutils.BeanUtils;
-import org.bouncycastle.asn1.x509.NameConstraintValidator;
+
 
 public class FieldMatchValidator implements ConstraintValidator<FieldMatch,Object>{
     private String firstFieldName;
@@ -16,7 +16,7 @@ public class FieldMatchValidator implements ConstraintValidator<FieldMatch,Objec
     }
 
     @Override
-    public boolean isValid(final Object value, final NameConstraintValidatorContext context){
+    public boolean isValid(final Object value, final ConstraintValidatorContext context){
         try{
             final Object firstObj = BeanUtils.getProperty(value, firstFieldName);
             final Object secondObj = BeanUtils.getProperty(value, secondFieldName);
